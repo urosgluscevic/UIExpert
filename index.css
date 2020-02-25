@@ -28,7 +28,7 @@ span{
 
 
 
-nav{
+#nav-bar{
     flex: 60%;
     max-width: 60%;
     height: 10vh;
@@ -39,17 +39,22 @@ nav{
     border-radius: 30px;
 }
 
-a{
+.nav-link{
     text-decoration: none;
     color: white;
     font-family: roboto;
     align-self: center;
+    width: 20%;
+    height: 100%;
+    line-height: 10vh;
+    text-align: center;
 }
 
-pre{
-    font-family: roboto;
-    color: gray;
+.nav-link:hover{
+    background-color: blueviolet;
+    border-radius: 30px;
 }
+
 
 #heading-div{
     flex: 30%;
@@ -57,7 +62,7 @@ pre{
     margin-left: 20%;
 }
 
-h1{
+.intro-heading{
     font-family: roboto;
     color: gray;
     font-size: 200%; /*use media query to make font-size 300% on larger screens*/
@@ -77,10 +82,12 @@ button{
     width: 50%;
     height: 5vh;
     background-color: rgb(90, 0, 244);
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 30px;
     box-shadow: 5px 10px 20px rgb(124, 124, 228);
-    
+    color: white;
+    vertical-align: sub;
+
 }
 
 button:hover{
@@ -99,3 +106,7 @@ button:hover{
     }
 }
 
+#hand{
+    max-width: 30%;
+    max-height: 4vh;
+}
