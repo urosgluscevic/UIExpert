@@ -1,6 +1,6 @@
 #intro{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,7 +17,7 @@ header{
     margin-left: 20%;
 }
 
-h3{
+.intro-title{
     font-family: roboto;
 }
 
@@ -25,7 +25,6 @@ span{
     color: blue;
     font-family: roboto;
 }
-
 
 
 #nav-bar{
@@ -78,7 +77,7 @@ p{
     color: darkgray;
 }
 
-button{
+.wave{
     width: 50%;
     height: 5vh;
     background-color: rgb(90, 0, 244);
@@ -90,7 +89,7 @@ button{
 
 }
 
-button:hover{
+.wave:hover{
     animation-name: button-enlarge;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -106,7 +105,135 @@ button:hover{
     }
 }
 
-#hand{
+
+#services{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 252, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services-header{
+    font-family: roboto;
+    color: rgb(90, 0, 244);
+    /* flex: 5%; */
+    max-width: 50%;
+}
+
+#services-title{
+    font-family: roboto;
+    color: gray;
+    /* flex: 5%; */
+    max-width: 50%;
+}
+
+#services-paragraph{
+    max-width: 50%;
+    /* flex: 5%; */
+}
+
+#offers-box{
+    flex: 75%;
+    width: 70%;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 10%;
+}
+
+.offer{
+    flex: 30%;
     max-width: 30%;
-    max-height: 4vh;
+    height: 45%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first{
+    background-image: linear-gradient(360deg, rgb(230, 166, 105), rgb(255, 182, 110));
+    box-shadow: 2px 2px 10px  rgb(230, 166, 105);
+}
+
+.second{
+    background-image: linear-gradient(360deg, rgb(0, 150, 185), rgb(0, 240, 229));
+    box-shadow: 2px 2px 10px rgb(0, 150, 185);
+}
+
+.third{
+    background-image: linear-gradient(360deg, rgb(75, 50, 100), rgb(111, 69, 159));
+    box-shadow: 2px 2px 10px rgb(75, 50, 100);
+}
+
+.fourth{
+    background-image: linear-gradient(360deg, rgb(10, 75, 172), rgb(56, 127, 212));
+    box-shadow: 2px 2px 10px rgb(10, 75, 172);
+}
+
+.fifth{
+    background-image: linear-gradient(360deg, rgb(100, 48, 215), rgb(168, 148, 247));
+    box-shadow: 2px 2px 10px rgb(100, 48, 215);
+}
+
+.sixth{
+    background-image: linear-gradient(360deg, rgb(162, 49, 59), rgb(255, 105, 127));
+    box-shadow: 2px 2px 10px rgb(162, 49, 59);
+}
+
+.icon{
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.icon-heading{
+    font-family: roboto;
+    color: white;
+}
+
+.icon-paragraph{
+    color: white;
+    max-width: 70%;
+    text-align: center;
+}
+
+.icon-button{
+    width: 50%;
+    height: 12%;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: rgb(230, 166, 105);
+    color: white;
+}
+
+.button-one{
+    background-color: rgb(230, 166, 105);
+}
+
+.button-two{
+    background-color: rgb(0, 150, 185);
+}
+
+.button-three{
+    background-color: rgb(75, 50, 100);
+}
+
+.button-four{
+    background-color: rgb(10, 75, 172);
+}
+
+.button-five{
+    background-color: rgb(100, 48, 215);
+}
+
+.button-six{
+    background-color: rgb(162, 49, 59);
 }
