@@ -67,7 +67,7 @@ span{
     font-size: 200%; /*use media query to make font-size 300% on larger screens*/
 }
 
-img{
+#welcome-image{
     flex: 50%;
     max-width: 50%;
 }
@@ -140,12 +140,11 @@ p{
     max-height: 60vh;
     display: flex;
     flex-direction: row;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .offer{
@@ -236,4 +235,70 @@ p{
 
 .button-six{
     background-color: rgb(162, 49, 59);
+}
+
+#about{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-image{
+    flex: 30%;
+    max-width: 30%;
+    margin-left: 10%;
+}
+
+#video-link{
+    flex: 55%;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#about-heading{
+    font-family: roboto;
+    color: gray;
+    font-size: 1.4rem;
+}
+
+#youtube{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(90, 0, 244);
+    box-shadow: 5px 10px 20px rgb(124, 124, 228);
+}
+
+#youtube:hover{
+    animation-name: color;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color{
+    20%{
+        background-color: rgb(124, 124, 228);
+    }
+    40%{
+        background-color: rgb(56, 127, 212);
+    }
+    60%{
+        background-color: royalblue;
+    }
+    80%{
+        background-color: skyblue;
+    }
 }
