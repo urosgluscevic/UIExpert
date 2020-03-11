@@ -1,6 +1,6 @@
 #intro{
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,6 +8,8 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1vh;
+
+    overflow: hidden;
 }
 
 header{
@@ -108,11 +110,13 @@ p{
 
 #services{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: rgb(250, 252, 254);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    overflow: hidden;
 }
 
 #services-header{
@@ -150,7 +154,8 @@ p{
 .offer{
     flex: 30%;
     max-width: 30%;
-    height: 45%;
+    height: 60%;
+    margin-bottom: 10%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -305,7 +310,7 @@ p{
 
 #portfolio{
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -313,7 +318,9 @@ p{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1vh;
-    background-color: rgb(248, 248, 248);;
+    background-color: rgb(248, 248, 248);
+
+    overflow: hidden;
 }
 
 #portfolio-text{
@@ -368,7 +375,7 @@ p{
 
 #success{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -376,6 +383,8 @@ p{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1vh;
+
+    overflow: hidden;
 }
 
 #success-title{
@@ -445,12 +454,14 @@ p{
     height: 110vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
     margin-top: 1vh;
     background-color: rgb(6,0, 36);
+
+    overflow: hidden;
 }
 
 .customer-heading{
@@ -516,11 +527,13 @@ p{
 
 #methods{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(248, 248, 248);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    overflow: hidden;
 }
 
 .methods-div{
@@ -563,4 +576,96 @@ p{
     max-width: 50%;
     margin: 0px 0px 0px 10%;
     padding: 0px;
+}
+
+#workflow{
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(250, 252, 254);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+
+    font-family: roboto;
+}
+
+#workflow-image{
+    flex: 40%;
+    max-width: 40%;
+}
+
+#our-workflow{
+    flex: 60%;
+    max-width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#workflow-data{
+    flex: 100%;
+    width: 100%;
+}
+
+.number-circle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.num{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5%;
+    color: white;
+}
+
+.workflow-heading{
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+.wf-paragraph{
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.wf-img{
+    max-width: 25%;
+}
+
+#sponsors{
+    flex: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sponsors-icon{
+    max-width: 10%;
 }
