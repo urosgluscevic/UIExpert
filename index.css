@@ -17,6 +17,10 @@ header{
     max-width: 20%;
     height: 10vh;
     margin-left: 20%;
+
+    position: fixed;
+    top: 5%;
+    left: -5%;
 }
 
 .intro-title{
@@ -31,13 +35,19 @@ span{
 
 #nav-bar{
     flex: 60%;
-    max-width: 60%;
+    width: 60%;
     height: 10vh;
     background-image: linear-gradient(90deg, rgb(90, 0, 244), rgb(150, 120, 247));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 30px;
+
+    position: fixed;
+    left: 35%;
+    top: 5%;
+
+    opacity: 0.6;
 }
 
 .nav-link{
@@ -327,7 +337,6 @@ p{
     flex: 30%;
     max-width: 30%;
     height: 50%;
-    /* margin-left: 20%; */
 }
 
 #portfolio-images{
@@ -672,13 +681,14 @@ p{
 
 #footer{
     max-width: 100%;
-    height: 40vh;
+    height: 25vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-color: lightgray;
 }
 
 .footer-info{
@@ -695,8 +705,42 @@ p{
 .footer-about{
     color: cornflowerblue;
     font-family: roboto;
+    line-height: 5px;
 }
 
 .contact-logo{
     max-width: 20%;
+}
+
+@media only screen and (max-width: 600px){
+    #footer{
+        position: fixed;
+        bottom: 0px;
+    }
+
+    #removable-1{
+        display: none;
+    }
+
+    #workflow-image{
+        display: none;
+        flex: 0%;
+    }
+
+    #our-workflow{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-picture:nth-child(odd){
+        display: none;
+    }
+
+    #portfolio-images{
+        height: 50%;
+    }
+
+    #decoration-div{
+        display: none;
+    }
 }
