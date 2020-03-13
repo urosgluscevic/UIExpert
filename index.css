@@ -48,6 +48,8 @@ span{
     top: 5%;
 
     opacity: 0.6;
+
+    z-index: 2;
 }
 
 .nav-link{
@@ -742,5 +744,52 @@ p{
 
     #decoration-div{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #services{
+        width: 60%
+    }
+
+    #about{
+        width: 40%;
+        height: 120vh;
+        position: relative;
+        left: 60%;
+        bottom: 120vh;
+
+        background-color: rgb(250, 252, 254);
+        border-left: 1px solid black;
+    }
+
+    #portfolio{
+        position: relative;
+        bottom: 120vh;
+    }
+
+    #success{
+        position: relative;
+        bottom: 120vh;
+    }
+
+    #customer{
+        position: relative;
+        bottom: 120vh;
+    }
+
+    #methods{
+        position: relative;
+        bottom: 120vh;
+    }
+
+    #workflow{
+        position: relative;
+        bottom: 120vh;
+    }
+
+    #footer{
+        position: relative;
+        bottom: 120vh;
     }
 }
