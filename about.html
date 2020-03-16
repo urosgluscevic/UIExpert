@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./contact.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="./about.css">
+    <title>About Us</title>
 </head>
 <body>
     <div id="intro">
@@ -16,29 +16,34 @@
         <nav id="nav-bar">
             <a class="nav-link" href="./index.html">HOME</a>
             <a id="removable-1" class="nav-link" href="">PORTFOLIO</a>
-            <a class="nav-link" href="./about.html">ABOUT</a>
+            <a class="nav-link" href="">ABOUT</a>
             <a id="removable-2" class="nav-link" href="">BLOG</a>
-            <a class="nav-link" href="">CONTACT</a>
+            <a class="nav-link" href="./contact.html">CONTACT</a>
         </nav>
     </div>
 
-    <h2 id="heading">Please Leave Your Comments And Suggestions</h2>
+    <div id="services">
+        <h2 class="service">OUR SERVICES</h2>
+        <p class="service">We provide a variety of services, ranging from web design to mobile applications. Our services include:</p>
 
-    <form action="">
-        <label for="email">Email: <br>
-            <input required type="email"
-            placeholder="your@mail.com"
-            name="email"
-            id="email">
-        </label>
+        <div id="offers-box">
+            <div class="offer first">
+                <img class="icon" src="./images/data.png" alt="computer icon">
+                <h6 class="icon-heading">Website Ui</h6>
+                <p class="icon-paragraph">Fast, Powerful & Most Secure Network</p>
+                <button class="icon-button button-one">Hover for more info</button>
+                <p class="hidden-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, nesciunt maxime id unde veniam deleniti dolore officiis ab ducimus corporis consequuntur illum? Et veniam doloremque amet nulla maxime architecto voluptates!</p>
+            </div>
 
-        <label id="txt" for="textarea">Comment: <br>
-            <textarea placeholder="Tell us what you think" required name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </label>
-
-        <input type="submit" name="submit" id="submit">
-
-    </form>
+            <div class="offer second">
+                <img class="icon" src="./images/painting.png" alt="computer icon">
+                <h6 class="icon-heading">ReDesign</h6>
+                <p class="icon-paragraph">Fast, Powerful & Most Secure Network</p>
+                <button class="icon-button button-two">Hover for more info</button>
+                <p class="hidden-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, nesciunt maxime id unde veniam deleniti dolore officiis ab ducimus corporis consequuntur illum? Et veniam doloremque amet nulla maxime architecto voluptates!</p>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer">
         <div class="footer-info">

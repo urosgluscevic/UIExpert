@@ -1,0 +1,286 @@
+#intro{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1vh;
+
+    overflow: hidden;
+}
+
+header{
+    flex: 20%;
+    max-width: 20%;
+    height: 10vh;
+    margin-left: 20%;
+}
+
+.intro-title{
+    font-family: roboto;
+}
+
+span{
+    color: rgb( 184, 127, 254);
+    font-family: roboto;
+}
+
+
+#nav-bar{
+    flex: 60%;
+    width: 60%;
+    height: 10vh;
+    background-image: linear-gradient(90deg, rgb(90, 0, 244), rgb(150, 120, 247));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 30px;
+    opacity: 0.6;
+    z-index: 2;
+
+    font-family: roboto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+    align-self: center;
+    width: 20%;
+    height: 100%;
+    line-height: 10vh;
+    text-align: center;
+
+    font-family: roboto;
+}
+
+.nav-link:hover{
+    background-color: blueviolet;
+    border-radius: 30px;
+
+    font-family: roboto;
+}
+
+#services{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(250, 252, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#services-header{
+    font-family: roboto;
+    color: rgb(90, 0, 244);
+    /* flex: 5%; */
+    max-width: 50%;
+}
+
+#services-title{
+    font-family: roboto;
+    color: gray;
+    /* flex: 5%; */
+    max-width: 50%;
+}
+
+#services-paragraph{
+    max-width: 50%;
+    /* flex: 5%; */
+}
+
+#offers-box{
+    flex: 75%;
+    width: 70%;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.offer{
+    flex: 45%;
+    max-width: 45%;
+    height: 60%;
+    margin-bottom: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.first{
+    background-image: linear-gradient(360deg, rgb(230, 166, 105), rgb(255, 182, 110));
+    box-shadow: 2px 2px 10px  rgb(230, 166, 105);
+}
+
+.second{
+    background-image: linear-gradient(360deg, rgb(0, 150, 185), rgb(0, 240, 229));
+    box-shadow: 2px 2px 10px rgb(0, 150, 185);
+}
+
+.icon{
+    max-width: 25%;
+    max-height: 25%;
+    margin-top: 5px;
+}
+
+.icon-heading{
+    font-family: roboto;
+    color: white;
+}
+
+.icon-paragraph{
+    color: white;
+    max-width: 70%;
+    text-align: center;
+}
+
+.icon-button{
+    width: 50%;
+    height: 12%;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: rgb(230, 166, 105);
+    color: white;
+}
+
+.button-one{
+    background-color: rgb(230, 166, 105);
+}
+
+.button-two{
+    background-color: rgb(0, 150, 185);
+}
+
+.offer:hover{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal{
+    0%{
+        height: 60%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.hidden-p{
+    margin-top: 20%;
+    font-family: roboto;
+    font-size: 0.7rem;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-family: roboto;
+}
+
+p{
+    font-family: roboto;
+}
+
+#footer{
+    max-width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+.footer-info{
+    flex: 20%;
+    max-width: 20%;
+    font-family: roboto;
+}
+
+#footer-heading{
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.footer-about{
+    color: cornflowerblue;
+    font-family: roboto;
+    line-height: 5px;
+}
+
+.contact-logo{
+    max-width: 20%;
+}
+
+#footer-p{
+    font-size: .6rem;
+    color: gray;
+}
+
+@media only screen and (max-width: 600px){
+    #footer{
+        /* position: fixed; */
+        bottom: 0px;
+    }
+
+    #removable-1{
+        display: none;
+    }
+
+    #removable-2{
+        display: none;
+    }
+
+    #workflow-image{
+        display: none;
+        flex: 0%;
+    }
+
+    #our-workflow{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-picture:nth-child(odd){
+        display: none;
+    }
+
+    #portfolio-images{
+        height: 50%;
+    }
+
+    #decoration-div{
+        display: none;
+    }
+
+    header{
+        margin-left: 2%;
+        flex: 58%;
+        width: 58%;
+    }
+
+    #nav-bar{
+        justify-content: space-evenly;
+        flex: 40%;
+        width: 40%;
+    }
+}
