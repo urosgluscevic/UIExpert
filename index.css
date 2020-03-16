@@ -724,6 +724,10 @@ p{
         display: none;
     }
 
+    #removable-2{
+        display: none;
+    }
+
     #workflow-image{
         display: none;
         flex: 0%;
@@ -744,6 +748,48 @@ p{
 
     #decoration-div{
         display: none;
+    }
+
+    header{
+        margin-left: 5%;
+    }
+
+    #nav-bar{
+        justify-content: space-evenly;
+    }
+
+    #offers-box{
+        max-height: 45vh;
+    }
+
+    #success{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .stat{
+        flex: 100%;
+        width: 100%;
+        margin-bottom: 5%;
+
+        font-size: 0.75rem;
+    }
+
+    .methods-div{
+        max-height: 40%;
+    }
+
+    #methods{
+        height: 55vh;
+    }
+
+    .offer{
+        flex: 40%;
+        max-width: 40%;
+    }
+
+    #services{
+        height: 140vh;
     }
 }
 

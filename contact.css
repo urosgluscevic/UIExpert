@@ -135,6 +135,11 @@ textarea:focus{
     background-color: lightgray;
 }
 
+#footer-p{
+    font-size: .6rem;
+    color: gray;
+}
+
 .footer-info{
     flex: 20%;
     max-width: 20%;
@@ -154,4 +159,32 @@ textarea:focus{
 
 .contact-logo{
     max-width: 20%;
+}
+
+@media only screen and (max-width: 600px){
+    #removable-1{
+        display: none;
+    }
+
+    #removable-2{
+        display: none;
+    }
+
+    #nav-bar{
+        justify-content: space-evenly;
+    }
+
+    header{
+        margin-left: 0%;
+    }
+
+    #nav-bar{
+        flex: 40%;
+        width: 40%;
+    }
+
+    header{
+        flex: 40%;
+        max-width: 40%;
+    }
 }
